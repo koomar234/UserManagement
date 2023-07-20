@@ -37,7 +37,7 @@ public class UserController {
     @DeleteMapping("/delete/{userId}")
     public String deleteUser(@PathVariable Integer userId){
         userService.deleteUserRecord(userId);
-        return "User deleted";
+        return  "User deleted";
     }
 
     @PatchMapping("/partialUpdate/{id}")
